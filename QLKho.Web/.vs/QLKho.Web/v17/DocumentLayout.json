@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|c:\\users\\vietpt\\desktop\\qlkho\\qlkho.net.coremvc\\qlkho.web\\qlkho.web\\views\\shared\\_layout_admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|solutionrelative:qlkho.web\\views\\shared\\_layout_admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|c:\\users\\vietpt\\desktop\\qlkho\\qlkho.net.coremvc\\qlkho.web\\qlkho.web\\areas\\admin\\views\\nhacungcap\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|solutionrelative:qlkho.web\\areas\\admin\\views\\nhacungcap\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|c:\\users\\vietpt\\desktop\\qlkho\\qlkho.net.coremvc\\qlkho.web\\qlkho.web\\areas\\admin\\controllers\\apicontroller\\congtyapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|solutionrelative:qlkho.web\\areas\\admin\\controllers\\apicontroller\\congtyapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|c:\\users\\vietpt\\desktop\\qlkho\\qlkho.net.coremvc\\qlkho.web\\qlkho.web\\areas\\admin\\controllers\\apicontroller\\nhacungcapapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|solutionrelative:qlkho.web\\areas\\admin\\controllers\\apicontroller\\nhacungcapapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\qlkho.web\\areas\\admin\\views\\congty\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|solutionrelative:qlkho.web\\areas\\admin\\views\\congty\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\qlkho.web\\areas\\admin\\controllers\\congtycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|solutionrelative:qlkho.web\\areas\\admin\\controllers\\congtycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\qlkho.web\\areas\\admin\\controllers\\nhacungcapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|solutionrelative:qlkho.web\\areas\\admin\\controllers\\nhacungcapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\qlkho.web\\areas\\admin\\controllers\\apicontroller\\congtyapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|solutionrelative:qlkho.web\\areas\\admin\\controllers\\apicontroller\\congtyapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B795927-F5D4-4CAC-8619-A007672D7813}|QLKho.DataAccess\\QLKho.DataAccess.csproj|c:\\users\\vietpt\\desktop\\qlkho\\qlkho.net.coremvc\\qlkho.web\\qlkho.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B795927-F5D4-4CAC-8619-A007672D7813}|QLKho.DataAccess\\QLKho.DataAccess.csproj|C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\qlkho.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B795927-F5D4-4CAC-8619-A007672D7813}|QLKho.DataAccess\\QLKho.DataAccess.csproj|solutionrelative:qlkho.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B795927-F5D4-4CAC-8619-A007672D7813}|QLKho.DataAccess\\QLKho.DataAccess.csproj|c:\\users\\vietpt\\desktop\\qlkho\\qlkho.net.coremvc\\qlkho.web\\qlkho.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B795927-F5D4-4CAC-8619-A007672D7813}|QLKho.DataAccess\\QLKho.DataAccess.csproj|solutionrelative:qlkho.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|c:\\users\\vietpt\\desktop\\qlkho\\qlkho.net.coremvc\\qlkho.web\\qlkho.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F59ED51C-7B6A-4AF0-A508-7BC7606E4FB1}|QLKho.Web\\QLKho.Web.csproj|solutionrelative:qlkho.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B795927-F5D4-4CAC-8619-A007672D7813}|QLKho.DataAccess\\QLKho.DataAccess.csproj|C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\qlkho.dataaccess\\repository\\irepository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B795927-F5D4-4CAC-8619-A007672D7813}|QLKho.DataAccess\\QLKho.DataAccess.csproj|solutionrelative:qlkho.dataaccess\\repository\\irepository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +38,94 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout_Admin.cshtml",
-              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Views\\Shared\\_Layout_Admin.cshtml",
-              "RelativeDocumentMoniker": "QLKho.Web\\Views\\Shared\\_Layout_Admin.cshtml",
-              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Views\\Shared\\_Layout_Admin.cshtml",
-              "RelativeToolTip": "QLKho.Web\\Views\\Shared\\_Layout_Admin.cshtml",
-              "ViewState": "AQIAABsCAAAAAAAAAAAAADUCAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T01:53:00.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.DataAccess\\Repository\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "QLKho.DataAccess\\Repository\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.DataAccess\\Repository\\UnitOfWork.cs",
-              "RelativeToolTip": "QLKho.DataAccess\\Repository\\UnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAmwBkAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "NhaCungCapApiController.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Controllers\\ApiController\\NhaCungCapApiController.cs",
+              "RelativeDocumentMoniker": "QLKho.Web\\Areas\\Admin\\Controllers\\ApiController\\NhaCungCapApiController.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Controllers\\ApiController\\NhaCungCapApiController.cs",
+              "RelativeToolTip": "QLKho.Web\\Areas\\Admin\\Controllers\\ApiController\\NhaCungCapApiController.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAwIkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T01:04:28.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CongTyApiController.cs",
-              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Controllers\\ApiController\\CongTyApiController.cs",
-              "RelativeDocumentMoniker": "QLKho.Web\\Areas\\Admin\\Controllers\\ApiController\\CongTyApiController.cs",
-              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Controllers\\ApiController\\CongTyApiController.cs",
-              "RelativeToolTip": "QLKho.Web\\Areas\\Admin\\Controllers\\ApiController\\CongTyApiController.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAUwIEAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T09:33:03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.DataAccess\\Repository\\Repository.cs",
-              "RelativeDocumentMoniker": "QLKho.DataAccess\\Repository\\Repository.cs",
-              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.DataAccess\\Repository\\Repository.cs",
-              "RelativeToolTip": "QLKho.DataAccess\\Repository\\Repository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T01:15:08.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Program.cs",
-              "RelativeDocumentMoniker": "QLKho.Web\\Program.cs",
-              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Program.cs",
-              "RelativeToolTip": "QLKho.Web\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:51:22.633Z",
+              "WhenOpened": "2024-07-24T09:51:35.009Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CongTyApiController.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Controllers\\ApiController\\CongTyApiController.cs",
+              "RelativeDocumentMoniker": "QLKho.Web\\Areas\\Admin\\Controllers\\ApiController\\CongTyApiController.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Controllers\\ApiController\\CongTyApiController.cs",
+              "RelativeToolTip": "QLKho.Web\\Areas\\Admin\\Controllers\\ApiController\\CongTyApiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T09:49:48.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Views\\NhaCungCap\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLKho.Web\\Areas\\Admin\\Views\\NhaCungCap\\Index.cshtml",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Views\\NhaCungCap\\Index.cshtml",
+              "RelativeToolTip": "QLKho.Web\\Areas\\Admin\\Views\\NhaCungCap\\Index.cshtml",
+              "ViewState": "AQIAALIAAAAAAAAAAAAAAM8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T09:13:50.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "QLKho.DataAccess\\Repository\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeToolTip": "QLKho.DataAccess\\Repository\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T09:02:27.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "QLKho.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "RelativeToolTip": "QLKho.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T09:02:01.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NhaCungCapController.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Controllers\\NhaCungCapController.cs",
+              "RelativeDocumentMoniker": "QLKho.Web\\Areas\\Admin\\Controllers\\NhaCungCapController.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Controllers\\NhaCungCapController.cs",
+              "RelativeToolTip": "QLKho.Web\\Areas\\Admin\\Controllers\\NhaCungCapController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T08:54:39.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Views\\CongTy\\Index.cshtml",
               "RelativeDocumentMoniker": "QLKho.Web\\Areas\\Admin\\Views\\CongTy\\Index.cshtml",
               "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Views\\CongTy\\Index.cshtml",
               "RelativeToolTip": "QLKho.Web\\Areas\\Admin\\Views\\CongTy\\Index.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAACkAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-23T09:47:53.615Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CongTyController.cs",
-              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Controllers\\CongTyController.cs",
-              "RelativeDocumentMoniker": "QLKho.Web\\Areas\\Admin\\Controllers\\CongTyController.cs",
-              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\Areas\\Admin\\Controllers\\CongTyController.cs",
-              "RelativeToolTip": "QLKho.Web\\Areas\\Admin\\Controllers\\CongTyController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T09:29:26.831Z",
+              "WhenOpened": "2024-07-24T07:56:35.28Z",
               "EditorCaption": ""
             }
           ]

@@ -7,24 +7,23 @@ namespace QLKho.Web.Areas.Admin.Controllers.ApiController
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CongTyApiController : Controller
+    public class NhaCungCapApiController : Controller
     {
        
         private readonly IUnitOfWork _unitOfWork;
 
-        public CongTyApiController(IUnitOfWork unitOfWork)
+        public NhaCungCapApiController(IUnitOfWork unitOfWork)
         {
       
            _unitOfWork = unitOfWork;
         }
-        // GET: api/CongTyApi
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CongTy>>> Get()
+        public async Task<ActionResult<IEnumerable<NhaCungCap>>> Get()
         {
             try
             {
-                var congTies = await _unitOfWork.CongTy.GetAll();
-                return Ok(congTies);
+                var nhacungcaps = await _unitOfWork.NhaCungCap.GetAll();
+                return Ok(nhacungcaps);
             }
             catch (Exception ex)
             {
@@ -35,18 +34,18 @@ namespace QLKho.Web.Areas.Admin.Controllers.ApiController
 
         // GET: api/CongTyApi/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<CongTy>> GetById(int id)
+        public async Task<ActionResult<NhaCungCap>> GetById(int id)
         {
             try
             {
-                var congTy = await _unitOfWork.CongTy.GetFirstOrDefault(x=>x.Id==id);
+                var nhacungcap = await _unitOfWork.NhaCungCap.GetFirstOrDefault(x => x.Id == id);
 
-                if (congTy == null)
+                if (nhacungcap == null)
                 {
                     return NotFound(); // Return 404 Not Found if entity with specified ID is not found
                 }
 
-                return Ok(congTy);
+                return Ok(nhacungcap);
             }
             catch (Exception ex)
             {
@@ -57,7 +56,7 @@ namespace QLKho.Web.Areas.Admin.Controllers.ApiController
 
         // POST: api/CongTyApi
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] CongTy congTy)
+        public async Task<IActionResult> Post([FromBody] NhaCungCap nhacungcap)
         {
             if (!ModelState.IsValid)
             {
@@ -66,8 +65,8 @@ namespace QLKho.Web.Areas.Admin.Controllers.ApiController
 
             try
             {
-                var createdCongTy = await _unitOfWork.CongTy.Add(congTy);
-                return CreatedAtAction("GetCongTy", new { id = createdCongTy.Id }, createdCongTy);
+                var createdNhaCungCap = await _unitOfWork.NhaCungCap.Add(nhacungcap);
+                return CreatedAtAction("GetCongTy", new { id = nhacungcap.Id }, createdNhaCungCap);
             }
             catch (Exception ex)
             {
@@ -78,32 +77,32 @@ namespace QLKho.Web.Areas.Admin.Controllers.ApiController
 
         // PUT: api/CongTyApi/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] CongTy updatedCongTy)
+        public async Task<IActionResult> Put(int id, [FromBody] NhaCungCap updatedNhaCungCap)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != updatedCongTy.Id)
+            if (id != updatedNhaCungCap.Id)
             {
                 return BadRequest("ID mismatch between route parameter and payload data.");
             }
 
             try
             {
-                var existingCongTy = await _unitOfWork.CongTy.GetFirstOrDefault(x => x.Id == id);
+                var existingNhaCungCap = await _unitOfWork.NhaCungCap.GetFirstOrDefault(x => x.Id == id);
 
-                if (existingCongTy == null)
+                if (existingNhaCungCap == null)
                 {
                     return NotFound(); // Return 404 Not Found if entity with specified ID is not found
                 }
 
                 // Update properties of existingCongTy with updatedCongTy
-                existingCongTy.TenCTy = updatedCongTy.TenCTy;
+                existingNhaCungCap.TenNhaCungCap = updatedNhaCungCap.TenNhaCungCap;
                 // Update other properties as needed
 
-                await _unitOfWork.CongTy.Update(existingCongTy);
+                await _unitOfWork.NhaCungCap.Update(existingNhaCungCap);
 
                 return NoContent(); // Return 204 No Content on successful update
             }
@@ -120,14 +119,14 @@ namespace QLKho.Web.Areas.Admin.Controllers.ApiController
         {
             try
             {
-                var existingCongTy = await _unitOfWork.CongTy.GetFirstOrDefault(x=>x.Id==id);
+                var existingNhaCungCap = await _unitOfWork.NhaCungCap.GetFirstOrDefault(x => x.Id == id);
 
-                if (existingCongTy == null)
+                if (existingNhaCungCap == null)
                 {
                     return NotFound(); // Return 404 Not Found if entity with specified ID is not found
                 }
 
-                await _unitOfWork.CongTy.Remove(existingCongTy);
+                await _unitOfWork.NhaCungCap.Remove(existingNhaCungCap);
 
                 return NoContent(); // Return 204 No Content on successful deletion
             }

@@ -9,6 +9,7 @@ namespace QLKho.DataAccess.Repository.IRepository
     public interface IUnitOfWork
     {
        ICongTyRepository CongTy { get; }
+       INhaCungCapRepository NhaCungCap { get; }
        Task Save();
     }
 }

@@ -9,6 +9,6 @@ namespace QLKho.DataAccess.Repository.IRepository
 {
     public interface INhaCungCapRepository : IRepository<NhaCungCap>
     {
-        void Update(NhaCungCap obj);
+        Task<NhaCungCap> Update(NhaCungCap obj);
     }
 }

@@ -18,6 +18,7 @@ C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Models\obj\Debug
 C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Models\obj\Debug\net6.0\QLKho.Models.AssemblyInfoInputs.cache
 C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Models\obj\Debug\net6.0\QLKho.Models.AssemblyInfo.cs
 C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Models\obj\Debug\net6.0\QLKho.Models.csproj.CoreCompileInputs.cache
+C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Models\obj\Debug\net6.0\QLKho.Models.sourcelink.json
 C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Models\obj\Debug\net6.0\QLKho.Models.dll
 C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Models\obj\Debug\net6.0\refint\QLKho.Models.dll
 C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Models\obj\Debug\net6.0\QLKho.Models.pdb

@@ -13,9 +13,11 @@ namespace QLKho.DataAccess.Repository
         {
             _db = db;
             CongTy = new CongTyRepository(_db);
+            NhaCungCap = new NhaCungCapRepository(_db);
         }
 
         public ICongTyRepository CongTy { get; private set; }
+        public INhaCungCapRepository NhaCungCap { get; private set; }
 
         public async Task Save()
         {

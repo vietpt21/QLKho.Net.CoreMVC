@@ -1,4 +1,5 @@
-﻿using QLKho.DataAccess.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using QLKho.DataAccess.Data;
 using QLKho.DataAccess.Repository.IRepository;
 using QLKho.Models;
 using System;
@@ -17,9 +18,21 @@ namespace QLKho.DataAccess.Repository
         {
             _db = db;
         }
-        public void Update(NhaCungCap obj)
+
+        public async Task<NhaCungCap> Update(NhaCungCap nhaCungCap)
         {
-            _db.NhaCungCaps.Update(obj);
+            var existingNhaCungCap = await _db.NhaCungCaps.FirstOrDefaultAsync(x => x.Id == nhaCungCap.Id);
+
+            if (existingNhaCungCap != null)
+            {
+                _db.Entry(existingNhaCungCap).CurrentValues.SetValues(nhaCungCap);
+                await _db.SaveChangesAsync();
+                return existingNhaCungCap;  // Return the updated entity from the database
+            }
+
+            return null;  // Return null if the entity with the specified ID was not found
         }
+
+       
     }
 }

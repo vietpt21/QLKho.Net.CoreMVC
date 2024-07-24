@@ -9,16 +9,16 @@
 
                 <h4 class="card-title">Datatable Editable</h4>
                 <div class="d-flex justify-content-end mb-3">
-                    <button id="addCongTyBtn" class="btn btn-primary">
+                    <button id="addNhaCungCapBtn" class="btn btn-primary">
                         <i class="fas fa-plus"></i>
                     </button>
                 </div>
                 <div class="table-responsive">
-                    <table id="tblDataCongTy" class="table table-editable table-nowrap align-middle table-edits" ">
+                    <table id="tblDataNhaCungCap" class="table table-editable table-nowrap align-middle table-edits" ">
                         <thead>
                             <tr>
-                                <th>Ma Cong Ty </th>
-                                <th>Ten Cong Ty</th>
+                                <th>Ma Nha Cung Cap </th>
+                                <th>Ten Nha Cung Cap</th>
                                 <th>Edit</th>
                             </tr>
                         </thead>
@@ -34,24 +34,24 @@
 <script src="@Url.Content("~/assets/libs/jquery/jquery.min.js")"></script>
 
 
-<div class="modal fade" id="addCongTyModal" tabindex="-1" role="dialog" aria-labelledby="addCongTyModalLabel" aria-hidden="true">
+<div class="modal fade" id="addNhaCungCapModal" tabindex="-1" role="dialog" aria-labelledby="addNhaCungCapModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="addCongTyModalLabel">Add New Cong Ty</h5>
+                <h5 class="modal-title" id="addNhaCungCapModalLabel">Add New Nha Cung Cap</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form id="addCongTyForm">
+                <form id="addNhaCungCapForm">
                     <div class="form-group">
-                        <label for="TenCTy"> Ten Cong Ty </label>
-                        <input type="text" class="form-control" id="TenCTy" required>
+                        <label for="TenNhaCungCap">Tên Nhà Cung Cấp</label>
+                        <input type="text" class="form-control" id="TenNhaCungCap" required>
                     </div>
-                  
-                    <button type="submit" class="btn btn-primary">Add Cong Ty</button>
+                    <button type="submit" class="btn btn-primary">Thêm Nhà Cung Cấp</button>
                 </form>
+
             </div>
         </div>
     </div>
@@ -64,7 +64,7 @@
 
         // Initialize DataTable and load data via AJAX
         $.ajax({
-            url: '/api/CongTyApi',
+            url: '/api/NhaCungCapApi',
             method: 'GET',
             success: function (response) {
                 var data = response; // Assuming response is already an array of CongTy objects
@@ -74,7 +74,7 @@
                 data.forEach(function (item) {
                     html += '<tr data-id="' + item.Id + '">' +
                         '<td data-field="Id">' + item.Id + '</td>' +
-                        '<td data-field="TenCTy">' + item.TenCTy + '</td>' +
+                        '<td data-field="TenNhaCungCap">' + item.TenNhaCungCap + '</td>' +
                         '<td>' +
                         '<a class="btn btn-outline-secondary btn-sm edit" title="Edit">' +
                         '<i class="fas fa-pencil-alt"></i>' +
@@ -87,15 +87,15 @@
                 });
 
                 // Add HTML to the table body
-                $('#tblDataCongTy tbody').html(html);
+                $('#tblDataNhaCungCap tbody').html(html);
 
                 // Initialize DataTables
-                table = $('#tblDataCongTy').DataTable({
+                table = $('#tblDataNhaCungCap').DataTable({
                     // DataTables configuration options
                 });
 
                 // Handle inline editing
-                $('#tblDataCongTy tbody').on('click', '.edit', function () {
+                $('#tblDataNhaCungCap tbody').on('click', '.edit', function () {
                     var $btn = $(this).find('i');
                     var $row = $(this).closest('tr');
                     var id = $row.data('id');
@@ -103,13 +103,13 @@
                     if ($btn.hasClass('fa-pencil-alt')) {
                         // Fetch data for the specific row
                         $.ajax({
-                            url: '/api/CongTyApi/' + id,
+                            url: '/api/NhaCungCapApi/' + id,
                             method: 'GET',
                             success: function (response) {
                                 var item = response;
 
                                 // Populate the row with the fetched data and make it editable
-                                $row.find('td[data-field="TenCTy"]').html('<input type="text" class="form-control" value="' + item.TenCTy + '">');
+                                $row.find('td[data-field="TenNhaCungCap"]').html('<input type="text" class="form-control" value="' + item.TenNhaCungCap + '">');
                                 // Switch to save mode
                                 $btn.removeClass('fa-pencil-alt').addClass('fa-save').attr('title', 'Save');
                             },
@@ -121,11 +121,11 @@
                         // Switch to edit mode and save data
                         var updatedData = {
                             Id: id, // Add Id to the data object
-                            TenCTy: $row.find('input').val(),
+                            TenNhaCungCap: $row.find('input').val(),
                         };
 
                         $.ajax({
-                            url: '/api/CongTyApi/' + id,
+                            url: '/api/NhaCungCapApi/' + id,
                             method: 'PUT',
                             contentType: 'application/json',
                             data: JSON.stringify(updatedData),
@@ -143,13 +143,13 @@
                 });
 
                 // Handle deletion
-                $('#tblDataCongTy tbody').on('click', '.delete', function () {
+                $('#tblDataNhaCungCap tbody').on('click', '.delete', function () {
                     var $row = $(this).closest('tr');
                     var id = $row.data('id');
 
                     if (confirm('Are you sure you want to delete this item?')) {
                         $.ajax({
-                            url: '/api/CongTyApi/' + id,
+                            url: '/api/NhaCungCapApi/' + id,
                             method: 'DELETE',
                             success: function (response) {
                                 console.log('Deletion successful');
@@ -164,25 +164,26 @@
                 });
 
                 // Handle form submission for adding a new line
-                $('#addCongTyForm').on('submit', function (e) {
+                $('#addNhaCungCapForm').on('submit', function (e) {
                     e.preventDefault();
 
-                    var newCongTy = {
-                        TenCTy: $('#TenCTy').val(),
+                    var newNhaCungCap = {
+                        TenNhaCungCap: $('#TenNhaCungCap').val(),
                     };
 
                     $.ajax({
-                        url: '/api/CongTyApi',
+                        url: '/api/NhaCungCapApi',
                         method: 'POST',
                         contentType: 'application/json',
-                        data: JSON.stringify(newCongTy),
+                        data: JSON.stringify(newNhaCungCap),
                         success: function (response) {
-                            console.log('Creation successful');
-                            // Optionally, add the new row to the DataTable
+                            console.log('Thêm thành công');
                             var item = response;
+
+                            // Thêm dòng mới vào DataTable
                             var newRowHtml = '<tr data-id="' + item.Id + '">' +
                                 '<td data-field="Id">' + item.Id + '</td>' +
-                                '<td data-field="TenCTy">' + item.TenCTy + '</td>' +
+                                '<td data-field="TenNhaCungCap">' + item.TenNhaCungCap + '</td>' +
                                 '<td>' +
                                 '<a class="btn btn-outline-secondary btn-sm edit" title="Edit">' +
                                 '<i class="fas fa-pencil-alt"></i>' +
@@ -194,15 +195,17 @@
                                 '</tr>';
                             table.row.add($(newRowHtml)).draw();
 
-                            $('#addCongTyModal').modal('hide');
-                            $('#addCongTyForm')[0].reset();
+                            // Đóng modal và làm sạch form
+                            $('#addNhaCungCapModal').modal('hide');
+                            $('#addNhaCungCapForm')[0].reset();
                         },
                         error: function (xhr, status, error) {
-                            console.error('Error creating data:', error);
-                            // Handle error response
+                            console.error('Lỗi khi thêm dữ liệu:', error);
+                            // Xử lý phản hồi lỗi
                         }
                     });
                 });
+
 
             },
             error: function (xhr, status, error) {
@@ -210,8 +213,8 @@
             }
         });
 
-        $('#addCongTyBtn').on('click', function () {
-            $('#addCongTyModal').modal('show');
+        $('#addNhaCungCapBtn').on('click', function () {
+            $('#addNhaCungCapModal').modal('show');
         });
     });
 </script>

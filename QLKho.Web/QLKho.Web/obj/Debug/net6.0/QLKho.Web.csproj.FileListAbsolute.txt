@@ -491,6 +491,7 @@ C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Web\obj\Debug\ne
 C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Web\obj\Debug\net6.0\QLKho.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Web\obj\Debug\net6.0\QLKho.Web.RazorAssemblyInfo.cache
 C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Web\obj\Debug\net6.0\QLKho.Web.RazorAssemblyInfo.cs
+C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Web\obj\Debug\net6.0\QLKho.Web.sourcelink.json
 C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Web\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Web\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\VIETPT\Desktop\QLKHO\QLKho.Net.CoreMVC\QLKho.Web\QLKho.Web\obj\Debug\net6.0\staticwebassets\msbuild.QLKho.Web.Microsoft.AspNetCore.StaticWebAssets.props

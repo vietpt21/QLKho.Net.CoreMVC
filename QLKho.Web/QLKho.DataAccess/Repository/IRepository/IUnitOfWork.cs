@@ -10,6 +10,9 @@ namespace QLKho.DataAccess.Repository.IRepository
     {
        ICongTyRepository CongTy { get; }
        INhaCungCapRepository NhaCungCap { get; }
+       IKhoRepository Kho { get; }
+       INhapKhoRepository NhapKho { get; }
+       ISanPhamRepository SanPham { get; }
        Task Save();
     }
 }

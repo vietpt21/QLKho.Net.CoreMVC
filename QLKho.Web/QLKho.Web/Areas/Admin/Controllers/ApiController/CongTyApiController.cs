@@ -101,6 +101,13 @@ namespace QLKho.Web.Areas.Admin.Controllers.ApiController
 
                 // Update properties of existingCongTy with updatedCongTy
                 existingCongTy.TenCTy = updatedCongTy.TenCTy;
+                existingCongTy.TenDayDu = updatedCongTy.TenDayDu;
+                existingCongTy.NguoiDaiDien = updatedCongTy.NguoiDaiDien;
+                existingCongTy.DiaChi = updatedCongTy.DiaChi;
+                existingCongTy.SDT = updatedCongTy.SDT;
+                existingCongTy.Email = updatedCongTy.Email;
+                existingCongTy.Wensite = updatedCongTy.Wensite;
+                existingCongTy.NgayTao = updatedCongTy.NgayTao;
                 // Update other properties as needed
 
                 await _unitOfWork.CongTy.Update(existingCongTy);

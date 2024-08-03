@@ -25,4 +25,8 @@
     <ProjectReference Include="..\QLKho.Models\QLKho.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
 </Project>

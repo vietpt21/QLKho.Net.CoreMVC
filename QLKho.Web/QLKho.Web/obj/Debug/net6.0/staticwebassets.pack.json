@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\QLKho.Web.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\Images\\2c1b1ae34c5cd3b6c5d3fe93bc6c95a6_1_aad505f22f.jpeg",
+      "PackagePath": "staticwebassets\\Images\\2c1b1ae34c5cd3b6c5d3fe93bc6c95a6_1_aad505f22f.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\Images\\demtrang-biaao-01_1-352x500.jpg",
+      "PackagePath": "staticwebassets\\Images\\demtrang-biaao-01_1-352x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\Images\\ed11.png",
+      "PackagePath": "staticwebassets\\Images\\ed11.png"
+    },
+    {
+      "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\Images\\f-352x500.png",
+      "PackagePath": "staticwebassets\\Images\\f-352x500.png"
+    },
+    {
+      "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\Images\\tải xuống.jpg",
+      "PackagePath": "staticwebassets\\Images\\tải xuống.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\Images\\z4146493547694_6db4f5813188b44a1e8521abfa058cec-352x500.jpg",
+      "PackagePath": "staticwebassets\\Images\\z4146493547694_6db4f5813188b44a1e8521abfa058cec-352x500.jpg"
+    },
+    {
       "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\assets\\css\\app-dark-rtl.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\app-dark-rtl.min.css"
     },
@@ -4571,6 +4595,26 @@
     {
       "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\js\\congty.js",
+      "PackagePath": "staticwebassets\\js\\congty.js"
+    },
+    {
+      "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\js\\kho.js",
+      "PackagePath": "staticwebassets\\js\\kho.js"
+    },
+    {
+      "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\js\\nhacungcap.js",
+      "PackagePath": "staticwebassets\\js\\nhacungcap.js"
+    },
+    {
+      "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\js\\nhapkho.js",
+      "PackagePath": "staticwebassets\\js\\nhapkho.js"
+    },
+    {
+      "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
     },
     {
       "Id": "C:\\Users\\VIETPT\\Desktop\\QLKHO\\QLKho.Net.CoreMVC\\QLKho.Web\\QLKho.Web\\wwwroot\\js\\site.js",

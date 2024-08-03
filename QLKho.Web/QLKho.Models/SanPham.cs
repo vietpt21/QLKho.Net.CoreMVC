@@ -15,7 +15,7 @@ namespace QLKho.Models
         public string HienThi { get; set; }
         public string NhomSanPham { get; set; }
         public string HangSanXuat { get; set; }
-        public string HinhAnh { get; set; }
+        public string? HinhAnh { get; set; }
         public string DiaChi { get; set; }
         public string ThongTin { get; set; }
         public DateTime HanSuDung { get; set; }
@@ -32,6 +32,6 @@ namespace QLKho.Models
         public DateTime NgayTao { get; set; }
         public DateTime NgayCapNhat { get; set; }
         public string? NguoiTao { get; set; }
-
+        
     }
 }

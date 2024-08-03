@@ -1,0 +1,73 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+
+﻿<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title">Datatable Editable</h4>
+                <div class="d-flex justify-content-end mb-3">
+                    <button id="addKhoBtn" class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <div class="table-responsive">
+                    <table id="tblDataKho" class="table table-editable table-nowrap align-middle table-edits" ">
+                        <thead>
+                            <tr>
+                                <th>Ma  </th>
+                                <th>Ten Kho</th>
+                                <th>Vi Tri</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div> <!-- end row -->
+
+
+
+<script src="@Url.Content("~/assets/libs/jquery/jquery.min.js")"></script>
+<script src="@Url.Content("~/js/kho.js")"></script>
+
+
+<div class="modal fade" id="addKhoModal" tabindex="-1" role="dialog" aria-labelledby="addKhoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addKhoModalLabel">Add New Kho</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="addKhoForm">
+                    <div class="form-group">
+                        <label for="TenKho">Tên Kho</label>
+                        <input type="text" class="form-control" id="TenKho" required/>
+                        <label for="TenViTri">Tên Vi Tri</label>
+                        <input type="text" class="form-control" id="TenViTri" required/>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Thêm Kho</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+
+<style>
+    .editable {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+    }
+</style>

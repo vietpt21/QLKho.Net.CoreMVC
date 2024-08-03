@@ -1,0 +1,149 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Datatable Editable</h4>
+                <div class="d-flex justify-content-end mb-3">
+                    <button id="addNhapKhoBtn" class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <div class="table-responsive">
+                    <table id="tblDataNhapKho" class="table table-editable table-nowrap align-middle table-edits">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Loai nhap</th>
+                                <th>Ngay nhap</th>
+                                <th>Nha cung cap</th>
+                                <th>Ten Kho</th>
+                                <th>So luong nhap</th>
+                                <th>Nguoi giao</th>
+                                <th>Noi dung tao</th>
+                                <th>Ngay Tao</th>
+                                <th>Ngay Cap Nhat</th>
+                                <th>Nguoi tao</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div> <!-- end row -->
+
+@* 
+<div class="modal fade" id="addNhapKhoModal" tabindex="-1" role="dialog" aria-labelledby="addNhapKhoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addNhapKhoModalLabel">Add New Nhap Kho</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="addNhapKhoForm">
+                    <label for="LoaiNhap">Loại Nhập:</label>
+                    <input type="text" id="LoaiNhap" name="LoaiNhap" required><br>
+
+                    <label for="NgayNhap">Ngày Nhập:</label>
+                    <input type="date" id="NgayNhap" name="NgayNhap" required><br>
+
+                    <label for="NhaCungCapId">Nhà Cung Cấp ID:</label>
+                    <select id="NhaCungCapId"  class="form-select">
+                        <option selected>--Select Nha cungCap</option>
+                    </select>
+
+                    <label for="khoId">Kho ID:</label>
+                    <select id="KhoId" class="form-select">
+                        <option selected>--Select Kho</option>
+                    </select>
+
+                    <label for="SoLuongNhap">Số Lượng Nhập:</label>
+                    <input type="number" id="SoLuongNhap" name="SoLuongNhap" required><br>
+
+                    <label for="Nguoigiao">Người Giao:</label>
+                    <input type="text" id="Nguoigiao" name="Nguoigiao"><br>
+
+                    <label for="NoiDungNhap">Nội Dung Nhập:</label>
+                    <input id="NoiDungNhap" name="noiDungNhap"></input><br>
+
+                    <label for="NgayTao">NgayTao</label>
+                    <input type="datetime-local" class="form-control" id="NgayTao" name="NgayTao">
+
+                    <label for="NgayCapNhat">Ngay Cap Nhat</label>
+                    <input type="datetime-local" class="form-control" id="NgayCapNhat" name="NgayCapNhat">
+
+                    <label for="NguoiTao">Nguoi Tao</label>
+                    <input type="text" class="form-control" id="NguoiTao" name="NguoiTao">
+
+                    <button type="submit">Thêm</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div> *@
+@* update *@
+<div class="modal fade" id="editNhapKhoModal" tabindex="-1" role="dialog" aria-labelledby="editNhapKhoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editNhapKhoModalLabel">Edit New Nhap Kho</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="editNhapKhoForm">
+                    <label for="LoaiNhap">Loại Nhập:</label>
+                    <input type="text" id="LoaiNhap" name="LoaiNhap" required><br>
+
+                    <label for="NgayNhap">Ngày Nhập:</label>
+                    <input type="date" id="NgayNhap" name="NgayNhap" required><br>
+
+                    <label for="NhaCungCapId">Nhà Cung Cấp ID:</label>
+                    <select id="NhaCungCapId" class="form-select">
+                        <option selected>--Select Nha cungCap</option>
+                    </select>
+
+                    <label for="khoId">Kho ID:</label>
+                    <select id="KhoId" class="form-select">
+                        <option selected>--Select Kho</option>
+                    </select>
+
+                    <label for="SoLuongNhap">Số Lượng Nhập:</label>
+                    <input type="number" id="SoLuongNhap" name="SoLuongNhap" required><br>
+
+                    <label for="Nguoigiao">Người Giao:</label>
+                    <input type="text" id="Nguoigiao" name="Nguoigiao"><br>
+
+                    <label for="NoiDungNhap">Nội Dung Nhập:</label>
+                    <input id="NoiDungNhap" name="noiDungNhap"></input><br>
+
+                    <label for="NgayTao">NgayTao</label>
+                    <input type="datetime-local" class="form-control" id="NgayTao" name="NgayTao">
+
+                    <label for="NgayCapNhat">Ngay Cap Nhat</label>
+                    <input type="datetime-local" class="form-control" id="NgayCapNhat" name="NgayCapNhat">
+
+                    <label for="NguoiTao">Nguoi Tao</label>
+                    <input type="text" class="form-control" id="NguoiTao" name="NguoiTao">
+
+                    <button type="submit">Thêm</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="@Url.Content("~/assets/libs/jquery/jquery.min.js")"></script>
+<script src="~/js/nhapkho.js"></script>

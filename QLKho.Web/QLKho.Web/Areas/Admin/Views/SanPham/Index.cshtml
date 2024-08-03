@@ -1,0 +1,352 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+
+﻿<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Datatable Editable</h4>
+                <div class="d-flex justify-content-end mb-3">
+                    <button id="addSanPhamBtn" class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <div class="table-responsive">
+                    <table id="tblDataSanPham" class="table table-editable table-nowrap align-middle table-edits ">
+                        <thead>
+                            <tr>
+                                <th>Ma</th>
+                                <th>Ten San Pham</th>
+                                <th>Hien Thi</th>
+                                <th>Nhom San Pham</th>
+                                <th>Hang San Xuat</th>
+                                <th>Hinh Anh</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div> <!-- end row -->
+
+<script src="@Url.Content("~/assets/libs/jquery/jquery.min.js")"></script>
+<script src="~/js/product.js"></script>
+
+<!-- Edit San Pham Modal -->
+<div class="modal fade" id="editSanPhamModal" tabindex="-1" role="dialog" aria-labelledby="editSanPhamModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editSanPhamModalLabel">Edit New San Pham</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="editSanPhamForm" enctype="multipart/form-data">
+                    <div class="row">
+                        <input type="text" class="form-control" id="Id" name="Id">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="TenSanPham">Ten San Pham</label>
+                                <input type="text" class="form-control" id="TenSanPham" name="TenSanPham" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="HienThi">Hien Thi</label>
+                                <input type="text" class="form-control" id="HienThi" name="HienThi" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="NhomSanPham">Nhom San Pham</label>
+                                <input type="text" class="form-control" id="NhomSanPham" name="NhomSanPham" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="HangSanXuat">Hang San Xuat</label>
+                                <input type="text" class="form-control" id="HangSanXuat" name="HangSanXuat" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="HinhAnh">Hinh Anh</label>
+                                <input type="file" class="form-control-file" id="HinhAnh" name="HinhAnh">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="DiaChi">Dia Chi</label>
+                                <input type="text" class="form-control" id="DiaChi" name="DiaChi" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="ThongTin">Thong Tin</label>
+                                <input type="text" class="form-control" id="ThongTin" name="ThongTin" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="HanSuDung">Han Su Dung</label>
+                                <input type="datetime-local" class="form-control" id="HanSuDung" name="HanSuDung">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="QuyCach">Quy Cach</label>
+                                <input type="text" class="form-control" id="QuyCach" name="QuyCach" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="Dvt">Dvt</label>
+                                <input type="text" class="form-control" id="Dvt" name="Dvt" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="GiaNhap">Gia Nhap</label>
+                                <input type="text" class="form-control" id="GiaNhap" name="GiaNhap" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="SLToiThieu">SL Toi Thieu</label>
+                                <input type="text" class="form-control" id="SLToiThieu" name="SLToiThieu" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="SLToiDa">SL Toi Da</label>
+                                <input type="text" class="form-control" id="SLToiDa" name="SLToiDa" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="SLNhap">SL Nhap</label>
+                                <input type="text" class="form-control" id="SLNhap" name="SLNhap" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="SLXuat">SL Xuat</label>
+                                <input type="text" class="form-control" id="SLXuat" name="SLXuat" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="SLTon">SL Ton</label>
+                                <input type="text" class="form-control" id="SLTon" name="SLTon" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="TrangThai">Trang Thai</label>
+                                <input type="text" class="form-control" id="TrangThai" name="TrangThai" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="Ghichu">Ghichu</label>
+                                <input type="text" class="form-control" id="Ghichu" name="Ghichu" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="NgayTao">Ngay Tao</label>
+                                <input type="datetime-local" class="form-control" id="NgayTao" name="NgayTao">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="NgayCapNhat">Ngay Cap Nhat</label>
+                                <input type="datetime-local" class="form-control" id="NgayCapNhat" name="NgayCapNhat">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="NguoiTao">Nguoi Tao</label>
+                                <input type="text" class="form-control" id="NguoiTao" name="NguoiTao">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Edit San Pham</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addSanPhamModal" tabindex="-1" role="dialog" aria-labelledby="addSanPhamModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add New San Pham</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="addSanPhamForm" enctype="multipart/form-data">
+                    <div class="row">
+
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="TenSanPham">Ten San Pham</label>
+                                <input type="text" class="form-control" id="TenSanPham" name="TenSanPham" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="HienThi">Hien Thi</label>
+                                <input type="text" class="form-control" id="HienThi" name="HienThi" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="NhomSanPham">Nhom San Pham</label>
+                                <input type="text" class="form-control" id="NhomSanPham" name="NhomSanPham" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="HangSanXuat">Hang San Xuat</label>
+                                <input type="text" class="form-control" id="HangSanXuat" name="HangSanXuat" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="HinhAnh">Hinh Anh</label>
+                                <input type="file" class="form-control-file" id="HinhAnh" name="HinhAnh">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="DiaChi">Dia Chi</label>
+                                <input type="text" class="form-control" id="DiaChi" name="DiaChi" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="ThongTin">Thong Tin</label>
+                                <input type="text" class="form-control" id="ThongTin" name="ThongTin" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="HanSuDung">Han Su Dung</label>
+                                <input type="datetime-local" class="form-control" id="HanSuDung" name="HanSuDung">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="QuyCach">Quy Cach</label>
+                                <input type="text" class="form-control" id="QuyCach" name="QuyCach" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="Dvt">Dvt</label>
+                                <input type="text" class="form-control" id="Dvt" name="Dvt" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="GiaNhap">Gia Nhap</label>
+                                <input type="text" class="form-control" id="GiaNhap" name="GiaNhap" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="SLToiThieu">SL Toi Thieu</label>
+                                <input type="text" class="form-control" id="SLToiThieu" name="SLToiThieu" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="SLToiDa">SL Toi Da</label>
+                                <input type="text" class="form-control" id="SLToiDa" name="SLToiDa" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="SLNhap">SL Nhap</label>
+                                <input type="text" class="form-control" id="SLNhap" name="SLNhap" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="SLXuat">SL Xuat</label>
+                                <input type="text" class="form-control" id="SLXuat" name="SLXuat" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="SLTon">SL Ton</label>
+                                <input type="text" class="form-control" id="SLTon" name="SLTon" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="TrangThai">Trang Thai</label>
+                                <input type="text" class="form-control" id="TrangThai" name="TrangThai" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="Ghichu">Ghichu</label>
+                                <input type="text" class="form-control" id="Ghichu" name="Ghichu" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="NgayTao">Ngay Tao</label>
+                                <input type="datetime-local" class="form-control" id="NgayTao" name="NgayTao">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="NgayCapNhat">Ngay Cap Nhat</label>
+                                <input type="datetime-local" class="form-control" id="NgayCapNhat" name="NgayCapNhat">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="NguoiTao">Nguoi Tao</label>
+                                <input type="text" class="form-control" id="NguoiTao" name="NguoiTao">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add San Pham</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<style>
+    .modal-dialog {
+        max-width: 800px; /* Adjust width as needed */
+    }
+
+    .modal-content {
+        padding: 20px;
+    }
+
+    .table-editable td {
+        cursor: pointer;
+    }
+
+</style>

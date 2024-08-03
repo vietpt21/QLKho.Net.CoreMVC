@@ -22,9 +22,17 @@ namespace QLKho.DataAccess.Repository
 
         public async Task<T> Add(T entity)
         {
-            await dbSet.AddAsync(entity);
+            /* await dbSet.AddAsync(entity);
+             await _db.SaveChangesAsync();
+             return entity;*/
+            // Thêm đối tượng vào DbSet
+            var addedEntity = await dbSet.AddAsync(entity);
+
+            // Lưu các thay đổi vào cơ sở dữ liệu
             await _db.SaveChangesAsync();
-            return entity;
+
+            // Trả về đối tượng đã được thêm vào cơ sở dữ liệu
+            return addedEntity.Entity;
         }
 
         public async Task<IEnumerable<T>> GetAll(Expression<Func<T, bool>> filter = null, string includeProperties = null)

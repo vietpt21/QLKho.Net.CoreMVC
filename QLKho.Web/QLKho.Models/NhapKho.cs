@@ -11,6 +11,7 @@ namespace QLKho.Models
 {
     public class NhapKho
     {
+        [Key]
         public int Id { get; set; }
         public string LoaiNhap { get; set; }
         public DateTime NgayNhap { get; set; }
@@ -26,7 +27,7 @@ namespace QLKho.Models
         [ValidateNever]
         public Kho Kho { get; set; }
         public int SoLuongNhap { get; set; }
-        public string? Nguoigiao { get; set; }
+        public string Nguoigiao { get; set; }
         public string NoiDungNhap { get; set; }
         public DateTime? NgayTao { get; set; }
         public DateTime? NgayCapNhat { get; set; }

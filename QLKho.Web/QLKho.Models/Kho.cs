@@ -12,7 +12,11 @@ namespace QLKho.Models
         [Key]
         public int Id { get; set; }
         public string TenKho { get; set; }
-        public string TenViTri { get; set; }
+        public string HienThi { get; set; }
+        public string GhiChu { get; set; }
+        public string NguoiTao { get; set; }
+        public DateTime NgayTao { get; set; }
+        public DateTime NgayCapNhat { get; set; }
 
     }
 }

@@ -99,6 +99,105 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.KhoApiController",
+    "Method": "Get",
+    "RelativePath": "api/KhoApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[QLKho.Models.Kho, QLKho.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.KhoApiController",
+    "Method": "Post",
+    "RelativePath": "api/KhoApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kho",
+        "Type": "QLKho.Models.Kho",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.KhoApiController",
+    "Method": "GetById",
+    "RelativePath": "api/KhoApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "QLKho.Models.Kho",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.KhoApiController",
+    "Method": "Put",
+    "RelativePath": "api/KhoApi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedKho",
+        "Type": "QLKho.Models.Kho",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.KhoApiController",
+    "Method": "Delete",
+    "RelativePath": "api/KhoApi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.NhaCungCapApiController",
     "Method": "Get",
     "RelativePath": "api/NhaCungCapApi",
@@ -185,6 +284,444 @@
     "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.NhaCungCapApiController",
     "Method": "Delete",
     "RelativePath": "api/NhaCungCapApi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.NhapKhoApiController",
+    "Method": "Get",
+    "RelativePath": "api/NhapKhoApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[QLKho.Models.NhapKho, QLKho.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.NhapKhoApiController",
+    "Method": "Post",
+    "RelativePath": "api/NhapKhoApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nhapKho",
+        "Type": "QLKho.Models.NhapKho",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.NhapKhoApiController",
+    "Method": "GetById",
+    "RelativePath": "api/NhapKhoApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "QLKho.Models.Kho",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.NhapKhoApiController",
+    "Method": "Put",
+    "RelativePath": "api/NhapKhoApi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedKho",
+        "Type": "QLKho.Models.Kho",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.NhapKhoApiController",
+    "Method": "Delete",
+    "RelativePath": "api/NhapKhoApi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.SanPhamApiController",
+    "Method": "Get",
+    "RelativePath": "api/SanPhamApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[QLKho.Models.SanPham, QLKho.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.SanPhamApiController",
+    "Method": "Post",
+    "RelativePath": "api/SanPhamApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TenSanPham",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HienThi",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NhomSanPham",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HangSanXuat",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HinhAnh",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DiaChi",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ThongTin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HanSuDung",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "QuyCach",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Dvt",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "GiaNhap",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "SLToiThieu",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SLToiDa",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SLNhap",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SLXuat",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SLTon",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TrangThai",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Ghichu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NgayTao",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "NgayCapNhat",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiTao",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "hinhAnh",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "QLKho.Models.SanPham",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.SanPhamApiController",
+    "Method": "GetById",
+    "RelativePath": "api/SanPhamApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "QLKho.Models.SanPham",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.SanPhamApiController",
+    "Method": "Put",
+    "RelativePath": "api/SanPhamApi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TenSanPham",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HienThi",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NhomSanPham",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HangSanXuat",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HinhAnh",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DiaChi",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ThongTin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HanSuDung",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "QuyCach",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Dvt",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "GiaNhap",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "SLToiThieu",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SLToiDa",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SLNhap",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SLXuat",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SLTon",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TrangThai",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Ghichu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NgayTao",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "NgayCapNhat",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "NguoiTao",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "hinhAnh",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "QLKho.Models.SanPham",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QLKho.Web.Areas.Admin.Controllers.ApiController.SanPhamApiController",
+    "Method": "Delete",
+    "RelativePath": "api/SanPhamApi/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

@@ -100,10 +100,19 @@ namespace QLKho.Web.Areas.Admin.Controllers.ApiController
 
                 // Update properties of existingCongTy with updatedCongTy
                 existingNhaCungCap.TenNhaCungCap = updatedNhaCungCap.TenNhaCungCap;
+                existingNhaCungCap.HienThi = updatedNhaCungCap.HienThi;
+                existingNhaCungCap.TenDayDu = updatedNhaCungCap.TenDayDu;
+                existingNhaCungCap.LoaiNCC = updatedNhaCungCap.LoaiNCC;
+                existingNhaCungCap.Logo = updatedNhaCungCap.Logo;
+                existingNhaCungCap.NguoiDaiDien = updatedNhaCungCap.NguoiDaiDien;
+                existingNhaCungCap.SDT = updatedNhaCungCap.SDT;
+                existingNhaCungCap.TinhTrang = updatedNhaCungCap.TinhTrang;
+                existingNhaCungCap.NVPhuTrach = updatedNhaCungCap.NVPhuTrach;
+                existingNhaCungCap.GhiChu = updatedNhaCungCap.GhiChu;
+                existingNhaCungCap.NgayTao = updatedNhaCungCap.NgayCapNhat;
+                existingNhaCungCap.NgayCapNhat = updatedNhaCungCap.NgayCapNhat;
                 // Update other properties as needed
-
                 await _unitOfWork.NhaCungCap.Update(existingNhaCungCap);
-
                 return NoContent(); // Return 204 No Content on successful update
             }
             catch (Exception ex)
